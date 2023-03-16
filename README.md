@@ -10,7 +10,5 @@ Using the STM32 F303K8 Microcontroller, I created a library for different compon
 3. Retrieve the files needed from the library
 4. Run your Project
 
-You will find it the files under "STM32-Library\nucleo-f303k8-library\Core\Components".
-
  
  # Example
