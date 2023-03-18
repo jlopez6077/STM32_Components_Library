@@ -135,6 +135,10 @@ Seg_Display_HandleTypeDef createDisplay(GPIO_TypeDef * d1_port, uint16_t d1_pin,
 										GPIO_TypeDef * d3_port, uint16_t d3_pin,
 										GPIO_TypeDef * d4_port, uint16_t d4_pin,
 										char * order, TIM_HandleTypeDef * timer)
+/* The array of "order" needs to specify how the Register is connected to the display.
+*						   MSB							LSB
+* example char order[8] = {'b','a','g','c','p','d','e','f'}; // the first in the array is b because it's connected to Q7 (MSB)
+* p is dp */
 {
 	Seg_Display_HandleTypeDef display;
 
@@ -180,7 +184,7 @@ Register_HanldeTypeDef registerCreate(SPI_HandleTypeDef hspi1,
 }
 
 void sendSPIdata(Register_HanldeTypeDef * reg, uint8_t data[])
-/* Register_HandleTypeDef structure that contains the configuration information for register module.
+/* Register_HandleTypeDef structure that contains the configuration information for the register module.
  * Data address to data buffer
  */
 {

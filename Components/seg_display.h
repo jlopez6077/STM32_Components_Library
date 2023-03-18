@@ -66,7 +66,6 @@ Seg_Display_HandleTypeDef createDisplay(GPIO_TypeDef * d1_port, uint16_t d1_pin,
 Register_HanldeTypeDef registerCreate(SPI_HandleTypeDef hspi1,
 										GPIO_TypeDef * stcp_port, uint16_t stcp_pin,
 										GPIO_TypeDef * mr_port, uint16_t mr_pin);
-
 void sendSPIdata(Register_HanldeTypeDef * reg, uint8_t data[]);
 void seg_display_init(Seg_Display_HandleTypeDef * display, Register_HanldeTypeDef * regi);
 void displayInt(uint8_t * buffer);
