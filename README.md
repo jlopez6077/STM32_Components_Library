@@ -1,7 +1,7 @@
 # STM32-Library
-Using the STM32 F303K8 Microcontroller, I created a library for different components.The library consists of functions that allow the microcontroller to interact with different hardware components. 
+Using the STM32 F303K8 Microcontroller, I created a library for different components. The library consists of functions that allow the microcontroller to interact with different hardware components. 
 
-# Link to the Documentation
+# Documentation
 https://github.com/jlopez6077/STM32_Components_Library/wiki
 
 # List of components:
